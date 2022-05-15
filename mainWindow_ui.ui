@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>745</width>
+    <height>652</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>地质信息可视化查询平台</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QgsMapCanvas" name="mapCanvas">
+   <layout class="QGridLayout" name="gridLayout_2">
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+   </layout>
+  </widget>
+  <widget class="QToolBar" name="leftWindowBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="wIcon"/>
+   <addaction name="wTitle"/>
+  </widget>
+  <widget class="QToolBar" name="rightWindowBar">
+   <property name="windowTitle">
+    <string>toolBar_2</string>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::RightToLeft</enum>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="closeWindow"/>
+   <addaction name="maxWindow"/>
+   <addaction name="restoreWindow"/>
+   <addaction name="minWindow"/>
+  </widget>
+  <widget class="QToolBar" name="tabToolbar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="toolButtonStyle">
+    <enum>Qt::ToolButtonTextUnderIcon</enum>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>true</bool>
+   </attribute>
+   <addaction name="normaltab"/>
+   <addaction name="infotab"/>
+   <addaction name="tocBar"/>
+  </widget>
+  <widget class="QToolBar" name="normalToolbar">
+   <property name="windowTitle">
+    <string>toolBar_2</string>
+   </property>
+   <property name="toolButtonStyle">
+    <enum>Qt::ToolButtonTextUnderIcon</enum>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>true</bool>
+   </attribute>
+   <addaction name="defaultTool"/>
+   <addaction name="zoomOut"/>
+   <addaction name="zoomIn"/>
+   <addaction name="zoomPan"/>
+   <addaction name="zoomLast"/>
+   <addaction name="zoomNext"/>
+   <addaction name="zoomFull"/>
+   <addaction name="tdMap"/>
+   <addaction name="separator"/>
+   <addaction name="aboutTool"/>
+  </widget>
+  <widget class="QToolBar" name="infoToolbar">
+   <property name="windowTitle">
+    <string>toolBar_3</string>
+   </property>
+   <property name="toolButtonStyle">
+    <enum>Qt::ToolButtonTextUnderIcon</enum>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>true</bool>
+   </attribute>
+   <addaction name="dcjg"/>
+   <addaction name="jydzd"/>
+   <addaction name="dzdbzd"/>
+   <addaction name="dzzh"/>
+   <addaction name="separator"/>
+   <addaction name="jgcx"/>
+   <addaction name="action_15"/>
+  </widget>
+  <action name="defaultTool">
+   <property name="icon">
+    <iconset>
+     <normaloff>icons/默认.png</normaloff>icons/默认.png</iconset>
+   </property>
+   <property name="text">
+    <string>默认</string>
+   </property>
+  </action>
+  <action name="zoomOut">
+   <property name="icon">
+    <iconset>
+     <normaloff>icons/放大.png</normaloff>icons/放大.png</iconset>
+   </property>
+   <property name="text">
+    <string>放大</string>
+   </property>
+  </action>
+  <action name="zoomIn">
+   <property name="icon">
+    <iconset>
+     <normaloff>icons/缩小.png</normaloff>icons/缩小.png</iconset>
+   </property>
+   <property name="text">
+    <string>缩小</string>
+   </property>
+  </action>
+  <action name="zoomPan">
+   <property name="icon">
+    <iconset>
+     <normaloff>icons/地图漫游.png</normaloff>icons/地图漫游.png</iconset>
+   </property>
+   <property name="text">
+    <string>漫游</string>
+   </property>
+  </action>
+  <action name="zoomLast">
+   <property name="icon">
+    <iconset>
+     <normaloff>icons/前一视图.png</normaloff>icons/前一视图.png</iconset>
+   </property>
+   <property name="text">
+    <string>前一视图</string>
+   </property>
+  </action>
+  <action name="zoomNext">
+   <property name="icon">
+    <iconset>
+     <normaloff>icons/后一视图.png</normaloff>icons/后一视图.png</iconset>
+   </property>
+   <property name="text">
+    <string>后一视图</string>
+   </property>
+  </action>
+  <action name="zoomFull">
+   <property name="icon">
+    <iconset>
+     <normaloff>icons/全图显示.png</normaloff>icons/全图显示.png</iconset>
+   </property>
+   <property name="text">
+    <string>全局视图</string>
+   </property>
+  </action>
+  <action name="tdMap">
+   <property name="icon">
+    <iconset>
+     <normaloff>icons/天地图.png</normaloff>icons/天地图.png</iconset>
+   </property>
+   <property name="text">
+    <string>天地图</string>
+   </property>
+  </action>
+  <action name="aboutTool">
+   <property name="icon">
+    <iconset>
+     <normaloff>icons/关于.png</normaloff>icons/关于.png</iconset>
+   </property>
+   <property name="text">
+    <string>关于</string>
+   </property>
+   <property name="toolTip">
+    <string>关于</string>
+   </property>
+  </action>
+  <action name="dcjg">
+   <property name="icon">
+    <iconset>
+     <normaloff>icons/soil.png</normaloff>icons/soil.png</iconset>
+   </property>
+   <property name="text">
+    <string>地层结构</string>
+   </property>
+  </action>
+  <action name="jydzd">
+   <property name="icon">
+    <iconset>
+     <normaloff>icons/基岩地震动.png</normaloff>icons/基岩地震动.png</iconset>
+   </property>
+   <property name="text">
+    <string>基岩地震动</string>
+   </property>
+  </action>
+  <action name="dzdbzd">
+   <property name="icon">
+    <iconset>
+     <normaloff>icons/地震波.png</normaloff>icons/地震波.png</iconset>
+   </property>
+   <property name="text">
+    <string>地震地表震动</string>
+   </property>
+  </action>
+  <action name="dzzh">
+   <property name="icon">
+    <iconset>
+     <normaloff>icons/地质灾害.png</normaloff>icons/地质灾害.png</iconset>
+   </property>
+   <property name="text">
+    <string>地震地质灾害</string>
+   </property>
+  </action>
+  <action name="jgcx">
+   <property name="icon">
+    <iconset>
+     <normaloff>icons/检查查询.png</normaloff>icons/检查查询.png</iconset>
+   </property>
+   <property name="text">
+    <string>结果查询</string>
+   </property>
+  </action>
+  <action name="action_15">
+   <property name="icon">
+    <iconset>
+     <normaloff>icons/地图定制.png</normaloff>icons/地图定制.png</iconset>
+   </property>
+   <property name="text">
+    <string>地图定制</string>
+   </property>
+  </action>
+  <action name="normaltab">
+   <property name="text">
+    <string>常规</string>
+   </property>
+  </action>
+  <action name="infotab">
+   <property name="text">
+    <string>信息查询</string>
+   </property>
+  </action>
+  <action name="tocBar">
+   <property name="text">
+    <string>图层面板</string>
+   </property>
+   <property name="toolTip">
+    <string>打开/关闭图层面板</string>
+   </property>
+  </action>
+  <action name="maxWindow">
+   <property name="icon">
+    <iconset>
+     <normaloff>icons/最大化.png</normaloff>icons/最大化.png</iconset>
+   </property>
+   <property name="text">
+    <string>最大化</string>
+   </property>
+   <property name="toolTip">
+    <string>最大化</string>
+   </property>
+  </action>
+  <action name="minWindow">
+   <property name="icon">
+    <iconset>
+     <normaloff>icons/最小化.png</normaloff>icons/最小化.png</iconset>
+   </property>
+   <property name="text">
+    <string>最小化</string>
+   </property>
+   <property name="toolTip">
+    <string>最小化</string>
+   </property>
+  </action>
+  <action name="closeWindow">
+   <property name="icon">
+    <iconset>
+     <normaloff>icons/关闭.png</normaloff>icons/关闭.png</iconset>
+   </property>
+   <property name="text">
+    <string>关闭</string>
+   </property>
+   <property name="toolTip">
+    <string>关闭</string>
+   </property>
+  </action>
+  <action name="restoreWindow">
+   <property name="icon">
+    <iconset>
+     <normaloff>icons/向下还原.png</normaloff>icons/向下还原.png</iconset>
+   </property>
+   <property name="text">
+    <string>向下还原</string>
+   </property>
+   <property name="toolTip">
+    <string>向下还原</string>
+   </property>
+  </action>
+  <action name="wIcon">
+   <property name="icon">
+    <iconset>
+     <normaloff>icons/App.ico</normaloff>icons/App.ico</iconset>
+   </property>
+   <property name="text">
+    <string>图标</string>
+   </property>
+  </action>
+  <action name="wTitle">
+   <property name="text">
+    <string>地质信息可视化查询平台</string>
+   </property>
+  </action>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QgsMapCanvas</class>
+   <extends>QWidget</extends>
+   <header>qgis.gui</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
