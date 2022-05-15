@@ -1,0 +1,75 @@
+('C:\\Users\\user\\Desktop\\地质管理系统\\ui\\build\\app\\app.pkg',
+ {'BINARY': 1,
+  'DATA': 1,
+  'EXECUTABLE': 1,
+  'EXTENSION': 1,
+  'PYMODULE': 1,
+  'PYSOURCE': 1,
+  'PYZ': 0,
+  'SPLASH': 1},
+ [('PYZ-00.pyz',
+   'C:\\Users\\user\\Desktop\\地质管理系统\\ui\\build\\app\\PYZ-00.pyz',
+   'PYZ'),
+  ('struct',
+   'F:\\Program Files\\QGIS 3.16.14\\apps\\Python39\\lib\\struct.pyo',
+   'PYMODULE'),
+  ('pyimod01_os_path',
+   'F:\\Program Files\\QGIS '
+   '3.16.14\\apps\\Python39\\lib\\site-packages\\PyInstaller\\loader\\pyimod01_os_path.pyc',
+   'PYMODULE'),
+  ('pyimod02_archive',
+   'F:\\Program Files\\QGIS '
+   '3.16.14\\apps\\Python39\\lib\\site-packages\\PyInstaller\\loader\\pyimod02_archive.pyc',
+   'PYMODULE'),
+  ('pyimod03_importers',
+   'F:\\Program Files\\QGIS '
+   '3.16.14\\apps\\Python39\\lib\\site-packages\\PyInstaller\\loader\\pyimod03_importers.pyc',
+   'PYMODULE'),
+  ('pyimod04_ctypes',
+   'F:\\Program Files\\QGIS '
+   '3.16.14\\apps\\Python39\\lib\\site-packages\\PyInstaller\\loader\\pyimod04_ctypes.pyc',
+   'PYMODULE'),
+  ('pyiboot01_bootstrap',
+   'F:\\Program Files\\QGIS '
+   '3.16.14\\apps\\Python39\\lib\\site-packages\\PyInstaller\\loader\\pyiboot01_bootstrap.py',
+   'PYSOURCE'),
+  ('pyi_rth_subprocess',
+   'F:\\Program Files\\QGIS '
+   '3.16.14\\apps\\Python39\\lib\\site-packages\\PyInstaller\\hooks\\rthooks\\pyi_rth_subprocess.py',
+   'PYSOURCE'),
+  ('pyi_rth_pkgutil',
+   'F:\\Program Files\\QGIS '
+   '3.16.14\\apps\\Python39\\lib\\site-packages\\PyInstaller\\hooks\\rthooks\\pyi_rth_pkgutil.py',
+   'PYSOURCE'),
+  ('pyi_rth_multiprocessing',
+   'F:\\Program Files\\QGIS '
+   '3.16.14\\apps\\Python39\\lib\\site-packages\\PyInstaller\\hooks\\rthooks\\pyi_rth_multiprocessing.py',
+   'PYSOURCE'),
+  ('pyi_rth_inspect',
+   'F:\\Program Files\\QGIS '
+   '3.16.14\\apps\\Python39\\lib\\site-packages\\PyInstaller\\hooks\\rthooks\\pyi_rth_inspect.py',
+   'PYSOURCE'),
+  ('pyi_rth_pyqt5',
+   'F:\\Program Files\\QGIS '
+   '3.16.14\\apps\\Python39\\lib\\site-packages\\PyInstaller\\hooks\\rthooks\\pyi_rth_pyqt5.py',
+   'PYSOURCE'),
+  ('pyi_rth_pkgres',
+   'F:\\Program Files\\QGIS '
+   '3.16.14\\apps\\Python39\\lib\\site-packages\\PyInstaller\\hooks\\rthooks\\pyi_rth_pkgres.py',
+   'PYSOURCE'),
+  ('pyi_rth_win32api',
+   'F:\\Program Files\\QGIS '
+   '3.16.14\\apps\\Python39\\lib\\site-packages\\PyInstaller\\hooks\\rthooks\\pyi_rth_win32api.py',
+   'PYSOURCE'),
+  ('pyi_rth_win32comgenpy',
+   'F:\\Program Files\\QGIS '
+   '3.16.14\\apps\\Python39\\lib\\site-packages\\PyInstaller\\hooks\\rthooks\\pyi_rth_win32comgenpy.py',
+   'PYSOURCE'),
+  ('app', 'C:\\Users\\user\\Desktop\\地质管理系统\\ui\\app.py', 'PYSOURCE')],
+ True,
+ False,
+ False,
+ [],
+ None,
+ None,
+ None)
